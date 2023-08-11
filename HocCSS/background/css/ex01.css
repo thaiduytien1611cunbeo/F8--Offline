@@ -1,0 +1,23 @@
+/* body {
+    height: 200px;
+    background-color: aqua;
+    background-image: url(../../../HocHTML/images/National02.jpg);
+    background-repeat: no-repeat;
+    background-position: 100px;
+    background-size: cover;
+} */
+/* .box p {
+    background-color: red;
+}
+.box h1 {
+    background-color: blue;
+}
+.box h1:hover {
+    background-color: transparent;
+} */
+body {
+    height: 2000px;
+    background: fixed url(../../../HocHTML/images/National02.jpg) 0 0 / contain no-repeat ;
+}
+
+body:hover 

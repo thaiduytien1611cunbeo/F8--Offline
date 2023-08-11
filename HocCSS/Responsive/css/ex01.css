@@ -1,0 +1,46 @@
+/* desktop first */
+body {
+    color: green;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        color: red;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        color: blue;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        color: blueviolet;
+    }
+}
+
+/* mobile first */
+
+body {
+    color: blueviolet;
+}
+
+@media screen and (min-width:400px) {
+    body {
+        color: green;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        color: blue;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        color: red;
+    }
+}

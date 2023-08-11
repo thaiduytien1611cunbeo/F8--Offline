@@ -1,0 +1,113 @@
+// comment SCSS
+/*comment CSS*/
+
+// Biến trong SCSS
+// Khi khai báo biến trong lập trình => Nên sử dụng quy tác đặt tên camelCase
+// Khai báo biến mà không phụ thuôc vào selector nào thì gọi là biến toàn cục
+
+
+$primaryColor: green;
+$fontFamily: sans-serif;
+$headerBackgroundColor: grey;
+
+
+// demo SCSS
+body {
+    font-family: $fontFamily;
+}
+.header {
+    padding: 20px 0;
+    background-color: $headerBackgroundColor;
+    &-inner {
+        display: flex;
+        justify-content: center;
+        color: $primaryColor;
+        .logo {
+            max-height: 150px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        .menu {
+            ul {
+                list-style: none;
+                display: flex;
+                > li {
+                    > a {
+                        display: block;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: green;
+                        }
+                        &::before {
+                            content: "";
+                        }
+                    }
+                }
+                + li {
+                    > a {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Khi biến là một selector
+$footerCopyright: ".copyright"; 
+// Khi biến là một thuộc tính
+$footerCopyrightProperty: "color";
+
+$fontSize: 20;
+
+
+footer {
+    &.footer {
+        padding: 20px 0;
+        ul {
+            display: flex;
+            justify-content: center;
+            &.menu {
+                list-style: none;
+            }
+        }
+        #{$footerCopyright} {
+            text-align: center;
+            #{$footerCopyrightProperty}: green;
+            // font-size: #{$fontSize}px;
+            font-size: $fontSize + 0%;
+        }
+    }
+}
+
+// Toán tử SCSS
+
+// 1. Toán tử số học
+
+// +, -, *, /, %
+
+// 2. Toán tử gán
+
+// $a:1
+
+// 3. Toán tử so sánh
+
+// >, <, >=, <=, ==, !=
+
+// 4. Toán tử lý luận
+
+// and, or, not
+
+// Nối chuỗi: +
+
+$prefix: "col-";
+$breakpoint: "md-";
+$number: 5;
+
+#{$prefix + $breakpoint + $number} {
+    width: 50%;
+}

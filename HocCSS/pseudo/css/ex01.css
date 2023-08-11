@@ -1,0 +1,31 @@
+.title::before {
+    content: "A";
+}
+.title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+}
+.box::after {
+    content: attr(data-name);
+}
+
+.box::first-line {
+    color: red;
+}
+.box::first-letter {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.box::selection {
+    background: black;
+    color: yellow;
+}
+.name::placeholder {
+    color: red;
+}
+.name {
+    color: yellow;
+}

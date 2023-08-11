@@ -1,0 +1,12 @@
+.box {
+    /* border-width: 2px;
+    border-style: double;
+    border-color: red; */
+    
+    /* Viết Tắt border: 10px dotted red; */
+    border-top: 5px red solid;
+    border-radius: 5px;
+    border-left: 5px blue solid;
+    border-right: 5px green solid;
+    border-bottom: 5px transparent solid;
+}

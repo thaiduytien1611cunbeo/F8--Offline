@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: $textColor;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: $fonts;
+    line-height: 1.25;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $linkColor;
+    &:hover {
+        color: $headingColor;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $headingColor;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

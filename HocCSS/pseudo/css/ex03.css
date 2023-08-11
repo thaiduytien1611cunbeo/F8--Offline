@@ -1,0 +1,23 @@
+.checkbox input:checked + span {
+    color: red;
+}
+
+/* .products h2:not(.active):not(.ignore) {
+    color: red;
+}
+not(.active) : Loại element có class là active */
+
+/* .products h2:first-child {
+    color: red;
+}
+.products h2:last-child {
+    color: green;
+} */
+
+/* .products h2:first-of-type {
+    color: red;
+} */
+
+.products .item:first-of-type {
+    color: red;
+}

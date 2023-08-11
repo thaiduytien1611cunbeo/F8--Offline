@@ -1,0 +1,23 @@
+/* Pesudo class 
+selector:pseudo{
+
+} */
+/* :hover
+:active
+:focus */
+
+.title:hover {
+    color: red;
+}
+.title:active {
+    color: green;
+}
+.btn:focus {
+    background-color: yellow;
+}
+.field-item:focus {
+    background-color: blue;
+}
+.text:focus {
+    color: red;
+}

@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    border: 2px red solid;
+    padding: 20px;
+}
+
+span {
+    width: 500px;
+    border: 1px red solid;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}

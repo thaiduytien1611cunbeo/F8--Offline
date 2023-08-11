@@ -1,0 +1,12 @@
+.image {
+    width: 50%;
+    height: 500px;
+    border: 2px red solid;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0px;
+}
+
+img {
+    max-width: 50%;
+}

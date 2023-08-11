@@ -1,0 +1,13 @@
+.box {
+    color: blueviolet;
+}
+.box h1 {
+    color: rgba(137, 43, 226, 0.5);
+}
+.box .content {
+    color: red;
+}
+.box h1:hover {
+    /* color: initial; */
+    color: inherit;
+}

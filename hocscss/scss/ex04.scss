@@ -1,0 +1,27 @@
+// Mixin
+
+@mixin section-base {
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    .container {
+        width: 1200px;
+    }
+}
+
+@mixin color {
+    color: red;
+}
+
+.product {
+    background-color: green;
+    @include section-base;
+}
+
+@mixin center($width, $space) {
+    width: $width;
+    margin: $space auto;
+}
+
+.box {
+    @include center(1200px, 30px)
+}

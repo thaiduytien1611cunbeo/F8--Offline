@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans_Condensed-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans_Condensed-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans_Condensed-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans_Condensed-Bold.ttf");
+    font-weight: 700;
+}
+
+
+
+/* font-weight : Thay đổi độ dầy của văn bản
+font-style : Thay đổi đọ nghiêng của văn bản */
+
+
+body {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-indent: 20px;
+    word-wrap: break-word;
+}
+
+.content a {
+    /* text-decoration: line-through underline overline; */
+    text-transform:uppercase;
+    word-spacing: 10px;
+}

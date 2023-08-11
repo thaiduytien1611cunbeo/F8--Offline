@@ -1,0 +1,27 @@
+.products, .pots {
+  color: blueviolet;
+}
+
+.products, .pots {
+  padding: 30px 0;
+  border: 1px solid red;
+}
+
+.box, .container .test {
+  padding: 30px 0;
+  border: 1px solid red;
+}
+
+.pots {
+  background-color: green;
+}
+
+.products {
+  background-color: gray;
+}
+
+.container .test {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=ex03.css.map */

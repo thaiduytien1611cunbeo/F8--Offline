@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red:checked ~ .content,
+        #red:checked ~ div label:nth-of-type(1) {
+            color: red;
+        }
+        #green:checked ~ .content {
+            color: green;
+        }
+        #blue:checked ~ .content {
+            color: blue;
+        }
+        input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="color" id="red">
+    <input type="radio" name="color" id="green">
+    <input type="radio" name="color" id="blue">
+    <div>
+
+        <label for="red"><span>red</span></label>
+        <label for="green"><span>green</span></label>
+        <label for="blue"><span>blue</span></label>
+        
+    </div>
+    
+    <hr>
+
+       
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, magni.</p>
+    </div>
+</body>
+</html>

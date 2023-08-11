@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first,
+.last {
+    border: 2px red solid   ;
+}
+
+.first {
+    margin-bottom: -10px;
+}
+
+.last {
+    margin-top: -10px;
+}

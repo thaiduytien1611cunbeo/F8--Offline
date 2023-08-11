@@ -1,0 +1,97 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_header {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    
+}
+
+.menu ul li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.menu ul li a,
+.contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.contact a {
+    padding: 10px 25px;
+    border-radius: 99px;
+    background-color: rgb(83, 83, 212);
+    color: white;
+}
+
+.bars {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 30px;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: rgb(40, 39, 39);
+        transition: left 0.4s ease, opacity 3s ease;
+        opacity: 0;
+    }
+
+    .menu ul li a {
+        color: #fff;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    input.bars {
+        display: none;
+    }
+
+    input.bars:checked ~ .menu ul {
+        left: 0;
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .contact {
+        display: none;
+    }
+}

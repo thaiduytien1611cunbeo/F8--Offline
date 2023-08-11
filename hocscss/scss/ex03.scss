@@ -1,0 +1,35 @@
+
+
+// 2. placeholder
+// 2.1 định nghĩa placeholder 
+
+%section-base2 {
+    color: blueviolet;
+}
+%section-base {
+    padding: 30px 0;
+    border: 1px solid red;
+    @extend %section-base2;
+}
+
+.box {
+    padding: 30px 0;
+    border: 1px solid red;
+}
+
+.pots {
+    background-color: green;
+    @extend %section-base;
+}
+
+.products {
+    background-color: gray;
+    @extend %section-base;
+}
+
+.container {
+    .test {
+        background-color: gray;
+        @extend .box;
+    }
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    /* background-color: green; */
+    color: black;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    /* right: 100%; */
+    
+    background-color: red;
+    transition-property: left, right;
+    transition-duration: 1s;
+}
+
+.btn:hover::before {
+    right: 0;
+    left: 0;
+}
+
+/* .btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    background-color: red;
+    transition: right 1s;
+}
+
+.btn:hover::after {
+    right: 0;
+} */
